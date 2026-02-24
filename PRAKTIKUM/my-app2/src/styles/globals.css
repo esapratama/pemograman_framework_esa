@@ -24,3 +24,19 @@ a {
   align-items: center;
   padding: 0 20px;
 }
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  background: #f1f1f1;
+  padding: 16px;
+  text-align: center;
+}

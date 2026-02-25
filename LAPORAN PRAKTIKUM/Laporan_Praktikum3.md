@@ -18,19 +18,19 @@
 
 ## Langkah 2 – Membuat Catch-All Route
 
-![alt text](IMG\B.1.png) <br>
+![alt text](IMG/B.1.png) <br>
 
 ## Langkah 3 – Pengujian Catch-All Route
 
-![alt text](IMG\B.3.png) <br>
-![alt text](IMG\B.3A.png) <br>
-![alt text](IMG\B.3B.png) <br>
-![alt text](IMG\B.3C.png) <br>
-![alt text](IMG\B.3D.png) <br>
+![alt text](IMG/B.3.png) <br>
+![alt text](IMG/B.3A.png) <br>
+![alt text](IMG/B.3B.png) <br>
+![alt text](IMG/B.3C.png) <br>
+![alt text](IMG/B.3D.png) <br>
 
 ## Langkah 4 – Optional Catch-All Route
 
-![alt text](IMG\B.4.png) <br>
+![alt text](IMG/B.4.png) <br>
 
 ## Langkah 5 – Validasi Parameter
 
@@ -38,22 +38,22 @@
 
 ## Langkah 7 – Navigasi Imperatif (router.push)
 
-![alt text](IMG\B.7.png) <br>
+![alt text](IMG/B.7.png) <br>
 
 ## Langkah 8 – Simulasi Redirect (Belum Login)
 
 ## E. Tugas Praktikum
 
 1. Tugas 1 (Wajib) <br>
-   ![alt text](IMG\A.TUGAS1.png) <br>
+   ![alt text](IMG/A.TUGAS1.png) <br>
 
 2. Tugas 2 (Wajib) <br>
-   ![alt text](IMG\A.TUGAS2.png) <br>
+   ![alt text](IMG/A.TUGAS2.png) <br>
 
 3. Tugas 3 (Pengayaan) <br>
-   ![alt text](IMG\B.TUGAS1.png) <br>
-   ![alt text](IMG\B.TUGAS2.png) <br>
-   ![alt text](IMG\B.TUGAS3.png) <br>
+   ![alt text](IMG/B.TUGAS1.png) <br>
+   ![alt text](IMG/B.TUGAS2.png) <br>
+   ![alt text](IMG/B.TUGAS3.png) <br>
 
 ## F. Pertanyaan Refleksi
 

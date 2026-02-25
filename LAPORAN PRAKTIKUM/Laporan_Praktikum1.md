@@ -16,43 +16,43 @@
 
 ## Langkah 1 – Pengecekan Lingkungan
 
-![alt text](IMG\1.png) <br>
+![alt text](IMG/1.png) <br>
 
 ## Langkah 2 – Membuat Project Next.js
 
-![alt text](IMG\2.png) <br>
-![alt text](IMG\2.1.png) <br>
-![alt text](IMG\2.2.png) <br>
+![alt text](IMG/2.png) <br>
+![alt text](IMG/2.1.png) <br>
+![alt text](IMG/2.2.png) <br>
 
 ## Langkah 3 – Menjalankan Server Development
 
-![alt text](IMG\3.png) <br>
-![alt text](IMG\3.1.png) <br>
+![alt text](IMG/3.png) <br>
+![alt text](IMG/3.1.png) <br>
 
 ## Langkah 4 – Mengenal Struktur Folder
 
 ## Langkah 5 – Modifikasi Halaman Utama
 
-![alt text](IMG\5.png) <br>
+![alt text](IMG/5.png) <br>
 
 ## Langkah 6 – Modifikasi API
 
-![alt text](IMG\6.png) <br>
-![alt text](IMG\6.1.png) <br>
+![alt text](IMG/6.png) <br>
+![alt text](IMG/6.1.png) <br>
 
 ## Langkah 7 – Modifikasi Background
 
-![alt text](IMG\7.png) <br>
+![alt text](IMG/7.png) <br>
 
 ## Langkah 8 – Setup ext pada VSCode (opsional)
 
 ## E. Tugas Praktikum
 
 1. Tugas 1 (Wajib) <br>
-   ![alt text](IMG\tugas1.png) <br>
+   ![alt text](IMG/tugas1.png) <br>
 
 2. Tugas 2 (Pengayaan) <br>
-   ![alt text](IMG\tugas2.png) <br>
+   ![alt text](IMG/tugas2.png) <br>
 
 ## F. Pertanyaan Refleksi
 

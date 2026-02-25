@@ -11,12 +11,12 @@
 
 <p align = "center"> Nama       : ESA PRATAMA PUTRI </p>
 <p align = "center"> NIM        : 2341720061 </p>
-<p align = "center"> Kelas / no : TI-3D / 09 </p>
+<p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
 
 ## Langkah 1 – Pengecekan Lingkungan
 
-![langkah1](IMG\1.png)
+![alt text](IMG\1.png) <br>
 
 ## Langkah 2 – Membuat Project Next.js
 

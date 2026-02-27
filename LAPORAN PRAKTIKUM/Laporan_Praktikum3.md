@@ -1,6 +1,6 @@
 # <p align ="center"> LAPORAN PRAKTIKUM PEMROGRAMAN BERBASIS FRAMEWORK </p>
 
-# <p align ="center"> JOBSHEET 3 </p>
+# <p align ="center"> JOBSHEET 2 </p>
 
 <br><br><br><br>
 
@@ -14,61 +14,65 @@
 <p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
 
-## Langkah 1 – Menjalankan Project
+## 1. Routing Dasar (Static Routing)
 
-## Langkah 2 – Membuat Catch-All Route
+![langkah1](IMG/A.1.png)
 
-![alt text](IMG/B.1.png) <br>
+## 2. Routing Menggunakan Folder
 
-## Langkah 3 – Pengujian Catch-All Route
+![alt text](IMG/A.2.png) <br>
 
-![alt text](IMG/B.3.png) <br>
-![alt text](IMG/B.3A.png) <br>
-![alt text](IMG/B.3B.png) <br>
-![alt text](IMG/B.3C.png) <br>
-![alt text](IMG/B.3D.png) <br>
+## 3. Nested Routing
 
-## Langkah 4 – Optional Catch-All Route
+![alt text](IMG/A.3.png) <br>
+![alt text](IMG/A.3B.png) <br>
+![alt text](IMG/A.3C.png) <br>
 
-![alt text](IMG/B.4.png) <br>
+## 4. Dynamic Routing
 
-## Langkah 5 – Validasi Parameter
+![alt text](IMG/A.4.png) <br>
+![alt text](IMG/A.4A.png) <br>
+![alt text](IMG/A.4B.png) <br>
+![alt text](IMG/A.4C.png) <br>
 
-## Langkah 6 – Membuat Halaman Login & Register
+## 5. Membuat Komponen Navbar
 
-## Langkah 7 – Navigasi Imperatif (router.push)
+![alt text](IMG/A.5.png) <br>
+![alt text](IMG/A.5A.png) <br>
+![alt text](IMG/A.5B.png) <br>
+![alt text](IMG/A.5C.png) <br>
+![alt text](IMG/A.5D.png) <br>
 
-![alt text](IMG/B.7.png) <br>
+## 6. Membuat Layout Global (App Shell)
 
-## Langkah 8 – Simulasi Redirect (Belum Login)
+![alt text](IMG/A.6.png) <br>
+![alt text](IMG/A.6A.png) <br>
 
 ## E. Tugas Praktikum
 
-1. Tugas 1 (Wajib) <br>
+1. Tugas 1 – Routing <br>
    ![alt text](IMG/A.TUGAS1.png) <br>
+   ![alt text](IMG/A.TUGAS1A.png) <br>
 
-2. Tugas 2 (Wajib) <br>
+2. Tugas 2 – Dynamic Routing <br>
    ![alt text](IMG/A.TUGAS2.png) <br>
 
-3. Tugas 3 (Pengayaan) <br>
-   ![alt text](IMG/B.TUGAS1.png) <br>
-   ![alt text](IMG/B.TUGAS2.png) <br>
-   ![alt text](IMG/B.TUGAS3.png) <br>
+3. Tugas 3 – Layout <br>
+   ![alt text](IMG/A.TUGAS3.png) <br>
+   ![alt text](IMG/A.TUGAS3A.png) <br>
+   ![alt text](IMG/A.TUGAS3B.png) <br>
+   ![alt text](IMG/A.TUGAS3C.png) <br>
 
 ## F. Pertanyaan Refleksi
 
-1. Apa perbedaan [id].js dan [...slug].js? <br>
+1. Apa perbedaan routing berbasis file dan routing manual? <br>
 
-- [id].js digunakan untuk menangkap satu parameter dinamis, sedangkan [...slug].js digunakan untuk menangkap banyak segmen URL sekaligus dalam bentuk array.<br>
+- Routing berbasis file otomatis dari struktur folder, routing manual harus dikonfigurasi sendiri. <br>
 
-2. Mengapa slug berbentuk array? <br>
+2. Mengapa dynamic routing penting dalam aplikasi web? <br>
 
-- [id].js digunakan untuk menangkap satu parameter dinamis, sedangkan [...slug].js digunakan untuk menangkap banyak segmen URL sekaligus dalam bentuk array. <br>
+- Untuk menampilkan data dinamis dengan satu template halaman. <br>
 
-3. Kapan sebaiknya menggunakan Link dan router.push()? <br>
+3. Apa keuntungan menggunakan layout global dibanding memanggil komponen satu per satu? <br>
 
-- Slug berbentuk array karena jumlah segmen URL bersifat dinamis sehingga perlu disimpan secara fleksibel. <br>
-
-3. Mengapa navigasi Next.js tidak me-refresh halaman? <br>
-
-- Karena menggunakan client-side navigation berbasis React sehingga hanya komponen yang berubah yang diperbarui tanpa reload penuh halaman. <br>
+- Layout global membuat aplikasi lebih konsisten, efisien, dan mudah dirawat dibanding memanggil komponen berulang. <br>

@@ -1,11 +1,13 @@
+import syles from './navbar.module.css';
+
 const Navbar = () => {
-    return (
-        <div className="navbar">
-            <div>
-                <strong>My App</strong>
-            </div>
-        </div>
-    );
+  return (
+    <div className={syles.navbar}>
+      <div>
+        <h1>Navbar Component</h1>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

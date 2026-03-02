@@ -1,4 +1,5 @@
 import styles from "@/styles/404.module.scss";
+import Link from "next/link";
 
 const Custom404 = () => {
   return (
@@ -19,6 +20,10 @@ const Custom404 = () => {
           alt="404"
           className={styles.image}
         />
+
+        <Link href="/" className={styles.button}>
+          Kembali ke Home
+        </Link>
       </div>
     </div>
   );

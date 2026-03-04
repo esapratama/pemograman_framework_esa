@@ -14,7 +14,43 @@
 <p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
 
-## F. Pertanyaan Evaluasi
+## Langkah 1 – Menjalankan Project
+
+![alt text](IMG2/7.L1.png) <br>
+
+## Langkah 2 – Membuat API Produk
+
+![alt text](IMG2/7.L2.png) <br>
+
+## Langkah 3 – Fetch Data API di Frontend
+
+![alt text](IMG2/7.L3.png) <br>
+
+## Langkah 5 – Setup Firebase
+
+![alt text](IMG2/7.L5.png) <br>
+
+## Langkah 10 – API Mengambil Data Firebase
+
+![alt text](IMG2/7.L10.png) <br>
+![alt text](IMG2/7.100.png) <br>
+
+## F. Tugas Praktikum
+
+## Tugas 1
+
+![alt text](LAPORAN PRAKTIKUM/IMG2/7.T1.png) <br>
+
+## Tugas
+
+![alt text](IMG2/7.T2.png) <br>
+![alt text](IMG2/7.T22.png) <br>
+
+## Tugas 3
+
+![alt text](IMG2/7.T3.png) <br>
+
+## G. Pertanyaan Evaluasi
 
 1. Apa fungsi API Routes pada Next.js? <br>
 

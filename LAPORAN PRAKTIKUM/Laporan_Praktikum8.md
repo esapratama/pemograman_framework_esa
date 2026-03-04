@@ -14,6 +14,18 @@
 <p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
 
+## Bagian 1 – Setup Data Produk
+
+![alt text](IMG2/8.L1.png) <br>
+
+## Bagian 2 – Implementasi CSR dengan useEffect
+
+![alt text](IMG2/8.L2.png) <br>
+
+## Bagian 3 – Implementasi Skeleton Loading
+
+![alt text](IMG2/8.L3.png) <br>
+
 ## D. Tugas Praktikum
 
 1. Jelaskan perbedaan: <br>

@@ -14,6 +14,45 @@
 <p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
 
+## Langkah 1 – Menjalankan Project
+
+![alt text](IMG2/6.L1.png) <br>
+
+## Langkah 2 – Membuat Custom Document
+
+![alt text](IMG2/6.L2.png) <br>
+
+## Langkah 3 – Pengaturan Title per Halaman
+
+![alt text](IMG2/6.L3.png) <br>
+
+## Langkah 4 – Membuat Custom Error Page (404)
+
+![alt text](IMG2/6.L4.png) <br>
+
+## Langkah 5 – Styling Halaman 404
+
+![alt text](IMG2/6.L5.png) <br>
+
+## Langkah 6 – Menampilkan Gambar dari Folder Public
+
+![alt text](IMG2/6.L6.png) <br>
+
+## Tugas Praktikum
+
+## Tugas 1
+
+![alt text](LAPORAN PRAKTIKUM/IMG2/6.T1.png) <br>
+
+## Tugas 2
+
+![alt text](IMG2/6.T2.png) <br>
+
+## Tugas 2
+
+![alt text](IMG2/6.T3.png) <br>
+![alt text](IMG2/6.T4.png) <br>
+
 ## F. Pertanyaan Evaluasi
 
 1. Apa fungsi utama \_document.js? <br>

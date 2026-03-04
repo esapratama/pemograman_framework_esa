@@ -5,7 +5,7 @@
 <br><br><br><br>
 
 <p align="center">
-   <img src="IMG\LOGO_POLINEMA.png" width="30%"> </p>
+   <img src="IMG/LOGO_POLINEMA.png" width="30%"> </p>
 
 <br><br><br><br><br>
 
@@ -13,6 +13,16 @@
 <p align = "center"> NIM        : 2341720061 </p>
 <p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
+
+## 9. Tailwind CSS
+
+![alt text](IMG2/5.L8.png) <br>
+
+## E. Tugas Praktikum
+
+![alt text](IMG2/5.T1.png) <br>
+![alt text](IMG2/5.T2.png) <br>
+![alt text](IMG2/5.T3.png) <br>
 
 ## F. Pertanyaan Refleksi
 

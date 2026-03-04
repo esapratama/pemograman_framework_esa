@@ -13,3 +13,18 @@
 <p align = "center"> NIM        : 2341720061 </p>
 <p align = "center"> Kelas      : TI-3D  </p>
 <p align = "center"> Jurusan    : TEKNOLOGI INFORMASI </p>
+
+## D. Tugas Praktikum
+
+1. Jelaskan perbedaan: <br>
+   o Client Side Rendering <br>
+
+- Client Side Rendering adalah metode rendering di mana proses pembuatan tampilan halaman dilakukan di sisi client (browser). <br>
+
+  o Server Side Rendering <br>
+
+- metode rendering di mana halaman dirender terlebih dahulu di sisi server sebelum dikirim ke browser dalam bentuk HTML yang sudah lengkap. <br>
+
+  o Static Site Generation <br>
+
+- metode di mana halaman dibuat dalam bentuk HTML statis pada saat proses build (sebelum diakses pengguna). <br>

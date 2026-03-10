@@ -53,7 +53,7 @@
 
 3. Buat laporan analisis minimal 3 halaman. <br>
    A. Pengujian pada Client-Side Rendering (CSR)
-   - - Proses Tambah Data: Ketika data baru ditambahkan melalui form, aplikasi akan mengirimkan permintaan POST ke API. Karena useSWR atau fetcher memantau perubahan secara real-time, daftar produk akan langsung diperbarui di browser tanpa perlu membangun ulang aplikasi. <br>
+   - Proses Tambah Data: Ketika data baru ditambahkan melalui form, aplikasi akan mengirimkan permintaan POST ke API. Karena useSWR atau fetcher memantau perubahan secara real-time, daftar produk akan langsung diperbarui di browser tanpa perlu membangun ulang aplikasi. <br>
    - Proses Hapus Data: Saat data dihapus, halaman akan melakukan re-validation dan menghapus elemen produk dari tampilan secara instan.<br>
 
 B. Pengujian pada Server-Side Rendering (SSR) <br>

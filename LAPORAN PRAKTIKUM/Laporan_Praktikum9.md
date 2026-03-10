@@ -16,11 +16,11 @@
 
 ## Bagian 1 – Setup Halaman SSR
 
-![alt text](IMG3\9.L1.png) <br>
+![alt text](IMG3/9.L1.png) <br>
 
 ## Bagian 2 – Implementasi getServerSideProps pada server.tsx
 
-![alt text](IMG3\9.L2.png) <br>
+![alt text](IMG3/9.L2.png) <br>
 
 ## Bagian 3 – Refactor Type ( produk type )
 

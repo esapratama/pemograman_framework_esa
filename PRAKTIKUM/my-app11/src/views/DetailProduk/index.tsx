@@ -1,23 +1,13 @@
-// import { ProductType } from "@/types/Product.type";
-import { ProdukType } from "../../types/Produk.type";
+import { ProdukType } from "@/types/Produk.type";
 import styles from "./detailProduk.module.scss";
 
 const DetailProduk = ({ produk }: { produk: ProdukType }) => {
-
-  if (!produk) {
-    return (
-      <div className={styles.produkdetail}>
-        <p>Sedang memuat data produk...</p>
-      </div>
-    );
-  }
-
   return (
     <>
       <h1 className={styles.title}>Detail Produk</h1>
       <div className={styles.produkdetail}>
         <div className={styles.produkdetail__image}>
-          <img src={produk.image} alt={produk.name} />
+          <img src={produk.image && produk.image} alt={produk.name} />
         </div>
 
         <div className={styles.produkdetail__info}>

@@ -8,17 +8,17 @@ import fetcher from "../../utils/swr/fetcher";
 const kategori = () => {
   // const [isLogin, setIsLogin] = useState(false);
   // const { push } = useRouter();
-  const [products, setProducts] = useState([]);
-  // console.log("products:", products);
+  const [produk, setproduk] = useState([]);
+  // console.log("produk:", produk);
 
   const { data, error, isLoading } = useSWR("/api/produk", fetcher);
   //cek apakah data, error, dan isLoading sudah benar
 
   return (
-    <div>
-      <TampilanProduk products={isLoading ? [] : data.data} />
-    </div>
-  );
+  <div>
+    <TampilanProduk produk={data?.data || []} />
+  </div>
+);
 };
 
 export default kategori;

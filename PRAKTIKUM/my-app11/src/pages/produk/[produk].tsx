@@ -16,7 +16,7 @@ const HalamanProduk = () => {
       {/* Gunakan data?.data (dengan tanda tanya). 
         Artinya: "Ambil properti data JIKA variabel data sudah ada isinya".
       */}
-      <DetailProduk products={isLoading ? null : data?.data} />
+      <DetailProduk produk={isLoading ? null : data?.data} />
     </div>
   );
 };

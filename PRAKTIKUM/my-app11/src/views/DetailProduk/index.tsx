@@ -2,9 +2,9 @@
 import { ProdukType } from "../../types/Produk.type";
 import styles from "./detailProduk.module.scss";
 
-const DetailProduk = ({ products }: { products: ProdukType }) => {
+const DetailProduk = ({ produk }: { produk: ProdukType }) => {
 
-  if (!products) {
+  if (!produk) {
     return (
       <div className={styles.produkdetail}>
         <p>Sedang memuat data produk...</p>
@@ -17,14 +17,14 @@ const DetailProduk = ({ products }: { products: ProdukType }) => {
       <h1 className={styles.title}>Detail Produk</h1>
       <div className={styles.produkdetail}>
         <div className={styles.produkdetail__image}>
-          <img src={products.image} alt={products.name} />
+          <img src={produk.image} alt={produk.name} />
         </div>
 
         <div className={styles.produkdetail__info}>
-          <h1 className={styles.produkdetail__name}>{products.name}</h1>
-          <p className={styles.produkdetail__category}>{products.category}</p>
+          <h1 className={styles.produkdetail__name}>{produk.name}</h1>
+          <p className={styles.produkdetail__category}>{produk.category}</p>
           <p className={styles.produkdetail__price}>
-            Rp {products.price && products.price.toLocaleString("id-ID")}
+            Rp {produk.price && produk.price.toLocaleString("id-ID")}
           </p>
         </div>
       </div>

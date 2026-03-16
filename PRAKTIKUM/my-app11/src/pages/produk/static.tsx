@@ -1,12 +1,12 @@
 import TampilanProduk from "../../views/produk";
 import { ProdukType } from "../../types/Produk.type";
 
-const halamanProdukStatic = (props: { products: ProdukType[] }) => {
-  const { products } = props;
+const halamanProdukStatic = (props: { produk: ProdukType[] }) => {
+  const { produk } = props;
   return (
     <div>
       <h1>Halaman Produk Static</h1>
-      <TampilanProduk products={products} />
+      <TampilanProduk produk={produk} />
     </div>
   );
 };
@@ -21,7 +21,7 @@ export async function getStaticProps() {
   // console.log("Data produk yang diambil dari API:", response);
   return {
     props: {
-      products: response.data,
+      produk: response.data,
     }
   }
 }

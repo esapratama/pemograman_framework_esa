@@ -15,10 +15,10 @@ export default function withAuth(
       });
 
       if (!token) {
-        const loginUrl = new URL("/", req.url);
+        const loginUrl = new URL("/login", req.url);
         return NextResponse.redirect(loginUrl);
       }
     }
     return middleware(req, next);
-  };
+  }
 }

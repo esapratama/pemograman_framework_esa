@@ -3,21 +3,16 @@ import Navbar from "../navbar";
 
 const disableNavbar = ['/auth/login', '/auth/register', '/404'];
 
-type AppShellProps = {
-    children: React.ReactNode;
-}
-
-const AppShell = (props: AppShellProps) => {
-
-    const { children } = props;
-    const {pathname} = useRouter();
+const AppShell = ({ children }: { children: React.ReactNode }) => {
+    const { pathname } = useRouter();
 
     return (
         <main>
             {!disableNavbar.includes(pathname) && <Navbar />}
-            {children}
+            <div className="container"> 
+                {children}
+            </div>
         </main>
-
     );
 };
 

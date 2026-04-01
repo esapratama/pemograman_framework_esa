@@ -40,3 +40,8 @@ a {
   padding: 16px;
   text-align: center;
 }
+
+.container {
+  padding: 20px 60px;
+  min-height: 100vh;
+}

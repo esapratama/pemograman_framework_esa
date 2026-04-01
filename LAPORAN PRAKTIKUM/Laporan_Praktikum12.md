@@ -16,18 +16,18 @@
 
 ## Bagian 1 – Tambahkan revalidate
 
-![alt text](LAPORAN PRAKTIKUM\IMG4\12.L1.png) <br>
+![alt text](IMG4/12.L1.png) <br>
 
 ## Bagian 1 – Buat API Revalidate
 
-![alt text](LAPORAN PRAKTIKUM\IMG4\12.L1D.png) <br>
-![alt text](LAPORAN PRAKTIKUM\IMG4\12.L1.1D.png) <br>
+![alt text](IMG4/12.L1D.png) <br>
+![alt text](IMG4/12.L1.1D.png) <br>
 
 ## Bagian 2 – Tambahkan Parameter Data
 
-![alt text](LAPORAN PRAKTIKUM\IMG4\12.L2D.png) <br>
-![alt text](LAPORAN PRAKTIKUM\IMG4\12.L2.2D.png) <br>
-![alt text](LAPORAN PRAKTIKUM\IMG4\12.L2.3D.png) <br>
+![alt text](IMG4/12.L2D.png) <br>
+![alt text](IMG4/12.L2.2D.png) <br>
+![alt text](IMG4/12.L2.3D.png) <br>
 
 ## H. Pertanyaan Analisis
 

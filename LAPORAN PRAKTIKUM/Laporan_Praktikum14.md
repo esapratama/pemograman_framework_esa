@@ -16,17 +16,17 @@
 
 ## Bagian 5 – Tambahkan Tombol Login & Logout
 
-![alt text](LAPORAN PRAKTIKUM/IMG5/B5.png) <br>
-![alt text](LAPORAN PRAKTIKUM/IMG5/B5.1.png) <br>
-![alt text](LAPORAN PRAKTIKUM/IMG5/B5.2.png) <br>
-![alt text](LAPORAN PRAKTIKUM/IMG5/B5.3.png) <br>
-![alt text](LAPORAN PRAKTIKUM/IMG5/B5.4.png) <br>
+![alt text](IMG5/B5.png) <br>
+![alt text](IMG5/B5.1.png) <br>
+![alt text](IMG5/B5.2.png) <br>
+![alt text](IMG5/B5.3.png) <br>
+![alt text](IMG5/B5.4.png) <br>
 
 ## D. Menambahkan Data Tambahan (Full Name)
 
-![alt text](LAPORAN PRAKTIKUM/IMG5/D1.png) <br>
-![alt text](LAPORAN PRAKTIKUM/IMG5/D1.1.png) <br>
-![alt text](LAPORAN PRAKTIKUM/IMG5/D1.2.png) <br>
+![alt text](IMG5/D1.png) <br>
+![alt text](IMG5/D1.1.png) <br>
+![alt text](IMG5/D1.2.png) <br>
 
 ## I. Pertanyaan Analisis
 

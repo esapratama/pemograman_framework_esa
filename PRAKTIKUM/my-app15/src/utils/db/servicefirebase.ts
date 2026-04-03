@@ -2,7 +2,6 @@ import {
   getFirestore,
   collection,
   getDocs,
-  Firestore,
   getDoc,
   doc,
   query,
@@ -10,9 +9,11 @@ import {
   where,
 } from "firebase/firestore";
 import app from "./firebase";
+import bcrypt from "bcrypt";
 
 const db = getFirestore(app);
 
+// Fungsi untuk mengambil semua produk
 export async function retrieveProduk(collectionName: string) {
   const snapshot = await getDocs(collection(db, collectionName));
   const data = snapshot.docs.map((doc) => ({
@@ -22,43 +23,45 @@ export async function retrieveProduk(collectionName: string) {
   return data;
 }
 
+// Fungsi untuk mengambil data berdasarkan ID
 export async function retrieveDataByID(collectionName: string, id: string) {
   const snapshot = await getDoc(doc(db, collectionName, id));
   const data = snapshot.data();
   return data;
 }
 
+// Fungsi pendaftaran User (Sign Up)
 export async function signUp(
-  userData: {
-    email: string;
-    fullname: string;
-    password: string;
-  },
-  callback: Function,
+  userData: any, 
+  callback: (result: { status: boolean; message: string }) => void
 ) {
-  const q = query(
-    collection(db, "users"),
-    where("email", "==", userData.email),
-  );
-  const querySnapshot = await getDocs(q);
-  const data = querySnapshot.docs.map((doc) => ({
-    id: doc.id,
-    ...doc.data(),
-  }));
-  // console.log("Query result:", data);
+  try {
+    // 1. Validasi Input di sisi Server
+    if (!userData.email) {
+      return callback({ status: false, message: "Email wajib diisi" });
+    }
+    if (userData.password.length < 6) {
+      return callback({ status: false, message: "Password minimal 6 karakter" });
+    }
 
-  if (data.length > 0) {
-    callback({
-      status: "success",
-      message: "User registered successfully",
-    });
-  } else {
-    // user belum ada -> boleh daftar
-    // await addDoc(collection(db, "users"), userData);
-    // console.log("User registered:", data);
-    callback({
-      status: "error",
-      message: "User already exists",
-    });
+    const q = query(collection(db, "users"), where("email", "==", userData.email));
+    const querySnapshot = await getDocs(q);
+    
+    if (!querySnapshot.empty) {
+      return callback({ status: false, message: "Email sudah terdaftar" });
+    }
+
+    // 2. Hash Password
+    const saltRounds = 10;
+    userData.password = await bcrypt.hash(userData.password, saltRounds);
+    
+    // 3. Tambahkan Role Default "member"
+    userData.role = "member"; 
+
+    await addDoc(collection(db, "users"), userData);
+    callback({ status: true, message: "Registrasi Berhasil" });
+
+  } catch (error: any) {
+    callback({ status: false, message: error.message });
   }
 }

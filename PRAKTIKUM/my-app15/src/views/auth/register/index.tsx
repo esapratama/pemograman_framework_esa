@@ -10,7 +10,7 @@ const TampilanRegister = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setIsLoading(true); // Menambahkan isLoading true saat submit dimulai
+    setIsLoading(true);
     setError("");
     
     const form = event.currentTarget;
@@ -19,29 +19,58 @@ const TampilanRegister = () => {
     const fullname = formData.get("fullname") as string;
     const password = formData.get("password") as string;
 
-    const response = await fetch("/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, fullname, password }),
-    });
+    // --- VALIDASI CLIENT SIDE ---
+    if (password.length < 6) {
+      setIsLoading(false);
+      setError("Password minimal 6 karakter");
+      return;
+    }
 
-    if (response.status === 200) {
-      form.reset();
+    try {
+      const response = await fetch("/api/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, fullname, password }),
+      });
+
+      const result = await response.json();
+
+      if (response.status === 200) {
+        form.reset();
+        setIsLoading(false);
+        push("/auth/login");
+      } else {
+        setIsLoading(false);
+        // Mengambil pesan error langsung dari API (message dari signUp)
+        setError(result.name || "An error occurred");
+      }
+    } catch (err) {
       setIsLoading(false);
-      push("/auth/login");
-    } else {
-      setIsLoading(false);
-      setError(
-        response.status === 400 ? "User already exists" : "An error occurred"
-      );
+      setError("Network error, please try again");
     }
   };
 
   return (
     <div className={style.register}>
       <h1 className={style.register__title}>Halaman Register</h1>
+      
+      {/* MENAMPILKAN PESAN ERROR */}
+      {error && (
+        <p style={{ 
+          color: "white", 
+          backgroundColor: "#ff4d4d", 
+          padding: "10px", 
+          borderRadius: "5px",
+          textAlign: "center",
+          fontSize: "14px",
+          marginBottom: "10px" 
+        }}>
+          {error}
+        </p>
+      )}
+
       <div className={style.register__form}>
         <form onSubmit={handleSubmit}>
           <div className={style.register__form__item}>
@@ -54,7 +83,7 @@ const TampilanRegister = () => {
               name="email"
               placeholder="Email"
               className={style.register__form__item__input}
-              required
+              required // VALIDASI WAJIB (HTML5)
             />
           </div>
           <div className={style.register__form__item}>
@@ -67,7 +96,7 @@ const TampilanRegister = () => {
               name="fullname"
               placeholder="Fullname"
               className={style.register__form__item__input}
-              required
+              required // VALIDASI WAJIB (HTML5)
             />
           </div>
           <div className={style.register__form__item}>
@@ -78,9 +107,9 @@ const TampilanRegister = () => {
               type="password"
               id="password"
               name="password"
-              placeholder="Password"
+              placeholder="Min. 6 characters"
               className={style.register__form__item__input}
-              required
+              required // VALIDASI WAJIB (HTML5)
             />
           </div>
           <button
@@ -91,7 +120,6 @@ const TampilanRegister = () => {
             {isLoading ? "Loading..." : "Register"}
           </button>
         </form>
-        {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
         <br />
         <p className={style.register__form__item__text}>
           Sudah punya akun? <Link href="/auth/login">Ke Halaman Login</Link>
@@ -102,75 +130,3 @@ const TampilanRegister = () => {
 };
 
 export default TampilanRegister;
-
-// import Link from "next/link";
-// import style from "../../auth/register/register.module.scss";
-
-// const TampilanRegister = () => {
-//   return (
-//     <div className={style.register}>
-//       <h1 className={style.register__title}>Halaman Register</h1>
-//       <div className={style.register__form}>
-//         <form action="">
-//           <div className={style.register__form__item}>
-//             <label
-//               htmlFor="email"
-//               className={style.register__form__item__label}
-//             >
-//               Email
-//             </label>
-//             <input
-//               type="email"
-//               id="email"
-//               name="email"
-//               placeholder="Email"
-//               className={style.register__form__item__input}
-//             />
-//           </div>
-
-//           <div className={style.register__form__item}>
-//             <label
-//               htmlFor="Fullname"
-//               className={style.register__form__item__label}
-//             >
-//               Fullname
-//             </label>
-//             <input
-//               type="text"
-//               id="Fullname"
-//               name="Fullname"
-//               placeholder="Fullname"
-//               className={style.register__form__item__input}
-//             />
-//           </div>
-
-//           <div className={style.register__form__item}>
-//             <label
-//               htmlFor="Password"
-//               className={style.register__form__item__label}
-//             >
-//               Password
-//             </label>
-//             <input
-//               type="password"
-//               id="Password"
-//               name="Password"
-//               placeholder="Password"
-//               className={style.register__form__item__input}
-//             />
-//           </div>
-
-//           <button type="submit" className={style.register__form__item__button}>
-//             Register
-//           </button>
-//         </form>
-//         <br />
-//         <p className={style.register__form__item__text}>
-//           Sudah punya akun? <Link href="/auth/login">Ke Halaman Login</Link>
-//         </p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TampilanRegister;

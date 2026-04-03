@@ -12,10 +12,11 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   if (req.method === "POST") {
-    await signUp(req.body, (result: { status: string; message: string }) => {
-      if (result.status === "success") {
+    // Sesuaikan tipe data result agar match dengan servicefirebase
+    await signUp(req.body, (result: { status: boolean; message: string }) => {
+      if (result.status) { // Jika status adalah true
         res.status(200).json({ name: result.message, alamat: "" });
-      } else {
+      } else { // Jika status adalah false
         res.status(400).json({ name: result.message, alamat: "" });
       }
     });

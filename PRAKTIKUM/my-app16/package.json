@@ -12,6 +12,7 @@
     "@types/node": "25.5.1",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
+    "bcryptjs": "^3.0.3",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.2",
     "firebase": "^12.11.0",
@@ -22,5 +23,8 @@
     "sass": "^1.99.0",
     "swr": "^2.4.1",
     "typescript": "6.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6"
   }
 }

@@ -1,6 +1,9 @@
 import { getToken } from "next-auth/jwt";
 import { NextFetchEvent, NextMiddleware, NextRequest, NextResponse } from "next/server";
 
+// Daftar halaman yang KHUSUS untuk admin saja
+const hanyaAdmin = ["/admin"];
+
 export default function withAuth(
   middleware: NextMiddleware,
   requireAuth: string[] = [],
@@ -15,10 +18,18 @@ export default function withAuth(
       });
 
       if (!token) {
-        const loginUrl = new URL("/login", req.url);
+        const loginUrl = new URL("/auth/login", req.url);
+        
+        loginUrl.searchParams.set("callbackUrl", encodeURI(req.url));
+        
         return NextResponse.redirect(loginUrl);
       }
+
+      if (hanyaAdmin.includes(pathname) && token.role !== "admin") {
+        return NextResponse.redirect(new URL("/", req.url));
+      }
     }
+    
     return middleware(req, next);
-  }
+  };
 }

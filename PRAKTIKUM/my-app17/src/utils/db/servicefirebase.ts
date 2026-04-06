@@ -14,7 +14,6 @@ import bcrypt from "bcryptjs";
 
 const db = getFirestore(app);
 
-// Fungsi untuk mengambil semua produk
 export async function retrieveProduk(collectionName: string) {
   const snapshot = await getDocs(collection(db, collectionName));
   const data = snapshot.docs.map((doc) => ({
@@ -24,7 +23,6 @@ export async function retrieveProduk(collectionName: string) {
   return data;
 }
 
-// Fungsi untuk mengambil data berdasarkan ID
 export async function retrieveDataByID(collectionName: string, id: string) {
   const snapshot = await getDoc(doc(db, collectionName, id));
   const data = snapshot.data();
@@ -46,13 +44,11 @@ export async function signIn(email: string) {
   }
 }
 
-// Fungsi pendaftaran User (Sign Up)
 export async function signUp(
   userData: any, 
   callback: (result: { status: boolean; message: string }) => void
 ) {
   try {
-    // 1. Validasi Input di sisi Server
     if (!userData.email) {
       return callback({ status: false, message: "Email wajib diisi" });
     }
@@ -67,11 +63,9 @@ export async function signUp(
       return callback({ status: false, message: "Email sudah terdaftar" });
     }
 
-    // 2. Hash Password
     const saltRounds = 10;
     userData.password = await bcrypt.hash(userData.password, saltRounds);
     
-    // 3. Tambahkan Role Default "member"
     userData.role = "member"; 
 
     await addDoc(collection(db, "users"), userData);
@@ -82,7 +76,7 @@ export async function signUp(
   }
 }
 
-export async function signInWithGoogle(userData: any, callback: any) {
+export async function loginWithSocial(userData: any, callback: any) {
   try {
     const q = query(
       collection(db, "users"),
@@ -96,29 +90,30 @@ export async function signInWithGoogle(userData: any, callback: any) {
     }));
 
     if (data.length > 0) {
-      // User sudah ada, update data
       userData.role = data[0].role;
+      
       await updateDoc(doc(db, "users", data[0].id), userData);
+      
       callback({
         status: true,
-        message: "User registered and logged in with Google",
+        message: "Login social media success",
         data: userData,
       });
     } else {
-      // User baru, tambah data
+
       userData.role = "member";
+      
       await addDoc(collection(db, "users"), userData);
       callback({
         status: true,
-        message: "User registered and logged in with Google",
+        message: "Registration social media success",
         data: userData,
       });
     }
   } catch (error: any) {
-    // Tangani error di sini
     callback({
       status: false,
-      message: "Failed to register user with Google",
+      message: "Failed to process social login",
     });
   }
 }

@@ -10,5 +10,6 @@ export function mainMiddleware(req: NextRequest) {
 export default withAuth(mainMiddleware, [
   "/admin",
   "/profile",
-  "/produk"
+  "/produk",
+  "/editor",
 ]);

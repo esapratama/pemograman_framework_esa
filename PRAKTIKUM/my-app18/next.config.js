@@ -23,8 +23,13 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "dynamic.zacdn.com", // Tambahkan domain baru ini
+        hostname: "dynamic.zacdn.com",
         port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
         pathname: "/**",
       },
     ],

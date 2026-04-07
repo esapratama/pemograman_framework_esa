@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Product Page Unit Test seharusnya merender halaman produk dengan benar 1`] = `
+<div>
+  <div>
+    <div
+      data-testid="title"
+      style="display: none;"
+    >
+      Daftar Produk
+    </div>
+    <div
+      class="produk"
+    >
+      <h1
+        class="produk__title"
+      >
+        Daftar Produk
+      </h1>
+      <div
+        class="produk__content"
+      >
+        <a
+          class="produk__content__item"
+          href="/produk/1"
+        >
+          <div
+            class="produk__content__item__image"
+          >
+            <img
+              alt="Produk A"
+              data-nimg="1"
+              decoding="async"
+              height="200"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+              style="color: transparent;"
+              width="200"
+            />
+          </div>
+          <h4
+            class="produk__content__item__name"
+          >
+            Produk A
+          </h4>
+          <p
+            class="produk__content__item__category"
+          >
+            A
+          </p>
+          <p
+            class="produk__content__item__price"
+          >
+            Rp 
+            10.000
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

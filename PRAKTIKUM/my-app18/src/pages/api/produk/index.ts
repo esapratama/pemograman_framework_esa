@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import {
-  retrieveDataById,
-  retrieveData,
+  retrieveDataByID,
+  retrieveProduk,
 } from "../../../utils/db/servicefirebase";
 
 type Data = {
@@ -17,7 +17,7 @@ export default async function handler(
 ) {
   if (req.query.produk && req.query.produk.length > 0) {
     const id = req.query.produk[0]; 
-    const data = await retrieveDataById("produk", id);
+    const data = await retrieveDataByID("produk", id);
     
     if (data) {
       res.status(200).json({ status: true, status_code: 200, data });
@@ -25,7 +25,7 @@ export default async function handler(
       res.status(404).json({ status: false, status_code: 404, data: null, message: "Data tidak ditemukan" });
     }
   } else {
-    const data = await retrieveData("produk");
+    const data = await retrieveProduk("produk");
     res.status(200).json({ status: true, status_code: 200, data });
   }
 }

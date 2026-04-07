@@ -1,19 +1,28 @@
 import { useRouter } from "next/router";
 import Navbar from "../navbar";
+import { Roboto } from "next/font/google";
 
 const disableNavbar = ['/auth/login', '/auth/register', '/404'];
 
-const AppShell = ({ children }: { children: React.ReactNode }) => {
-    const { pathname } = useRouter();
+type AppShellProps = {
+  children: React.ReactNode;
+}
 
-    return (
-        <main>
-            {!disableNavbar.includes(pathname) && <Navbar />}
-            <div className="container"> 
-                {children}
-            </div>
-        </main>
-    );
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+const AppShell = (props: AppShellProps) => {
+  const { children } = props;
+  const { pathname } = useRouter();
+
+  return (
+    <main className={roboto.className}>
+      {!disableNavbar.includes(pathname) && <Navbar />}
+      {children}
+    </main>
+  );
 };
 
 export default AppShell;

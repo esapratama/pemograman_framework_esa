@@ -6,21 +6,21 @@ exports[`About Page renders about page correctly 1`] = `
   "baseElement": <body>
     <div>
       <div>
-        <h1>
-          ini adalah halaman about
+        <h1
+          data-testid="title"
+        >
+          About Page
         </h1>
-         
-        <br />
       </div>
     </div>
   </body>,
   "container": <div>
     <div>
-      <h1>
-        ini adalah halaman about
+      <h1
+        data-testid="title"
+      >
+        About Page
       </h1>
-       
-      <br />
     </div>
   </div>,
   "debug": [Function],

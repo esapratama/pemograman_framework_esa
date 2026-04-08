@@ -65,4 +65,4 @@
 
 5. Apa fungsi redirect URI pada OAuth?
 
-- Sebagai URL tujuan setelah login dari provider (Google/GitHub). Untuk mengembalikan user ke aplikasi + membawa hasil autentikasi.
+- Sebagai URL tujuan setelah login dari provider (Google/GitHub). Untuk mengembalikan user ke aplikasi membawa hasil autentikasi.

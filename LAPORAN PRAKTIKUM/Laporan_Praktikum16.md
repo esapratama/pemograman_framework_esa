@@ -59,7 +59,7 @@
 
 2. Mengapa role disimpan di token?
 
-- Agar aplikasi bisa mengetahui tingkatan akses user (misal: Admin atau Member) pada setiap request tanpa harus berulang kali melakukan query ke database (Firebase). Ini membuat aplikasi lebih cepat (efisien) dan data role tersebut aman karena token sudah terenkripsi/ditandatangani (signed).
+- Agar aplikasi bisa mengetahui tingkatan akses user (misal: Admin atau Member) pada setiap request tanpa harus berulang kali melakukan query ke database (Firebase), membuat aplikasi lebih cepat (efisien) dan data role tersebut aman karena token sudah terenkripsi/ditandatangani (signed).
 
 3. Apa fungsi callbackUrl?
 

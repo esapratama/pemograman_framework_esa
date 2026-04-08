@@ -30,7 +30,7 @@
 2. Apa perbedaan font CDN dan next/font?
 
 - Font CDN (seperti Google Fonts Link): Browser harus mengirim permintaan tambahan ke server luar (Google) saat halaman dimuat. Ini menyebabkan keterlambatan dan risiko Flash of Unstyled Text (FOUT).
-- next/font: Next.js mengunduh font saat proses build dan menyimpannya secara lokal di server aplikasi Anda. Browser tidak perlu melakukan permintaan ke luar, sehingga loading lebih cepat dan privasi lebih terjaga.
+- next/font: Next.js mengunduh font saat proses build dan menyimpannya secara lokal di server aplikasi. Browser tidak perlu melakukan permintaan ke luar, sehingga loading lebih cepat dan privasi lebih terjaga.
 
 3. Mengapa script bisa membuat website lambat?
 

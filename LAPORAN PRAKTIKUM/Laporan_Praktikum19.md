@@ -64,7 +64,7 @@
 
 2. Mengapa branch coverage sulit mencapai 100%?
 
-- Branch coverage sulit mencapai 100% karena kode seringkali memiliki jalur logika yang kompleks, seperti penanganan error (catch blocks), kondisi yang sangat jarang terjadi (edge cases), atau dependensi eksternal yang sulit disimulasikan secara sempurna.
+- Branch coverage sulit mencapai 100% karena kode seringkali memiliki jalur logika yang kompleks, seperti penanganan error (catch blocks), kondisi yang sangat jarang terjadi (edge cases).
 
 3. Apa itu mocking?
 

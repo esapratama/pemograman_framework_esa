@@ -61,7 +61,7 @@
 
 4. Mengapa perlu redeploy setelah menambahkan environment?
 
-- Karena environment variable hanya dibaca saat build/deploy. Tanpa redeploy, perubahan tidak akan diterapkan ke aplikasi.
+- Karena environment variable hanya dibaca saat build, deploy. Tanpa redeploy, perubahan tidak akan diterapkan ke aplikasi.
 
 5. Apa fungsi redirect URI pada OAuth?
 

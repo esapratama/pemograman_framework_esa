@@ -77,4 +77,4 @@
 
 - Kehilangan Kontrol: tidak bisa memberikan atau mencabut akses khusus (seperti menjadikannya Editor) karena sistem tidak memiliki catatan permanen tentang user tersebut.
 - Data Terfragmentasi: setiap kali login, user akan dianggap sebagai orang asing, sehingga preferensi atau riwayat aktivitas mereka tidak bisa disimpan.
-- Ketergantungan Penuh: jika mengandalkan provider (Google/GitHub) tanpa menyimpan datanya, kita akan kesulitan melakukan audit data atau migrasi sistem di masa depan.
+- Ketergantungan Penuh: jika mengandalkan provider (Google/GitHub) tanpa menyimpan datanya.
